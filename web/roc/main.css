@@ -1,0 +1,100 @@
+		*{margin:0px; padding:0px;}
+		body{
+			width:100%;
+		}
+		header{
+			width:1200px;
+			margin:0px auto;
+		}
+		.nameDiv{
+			float:left;
+			width:400px;
+			margin:40px 1px;
+		}
+		#logo{
+			float:left;
+			width:40px;
+			margin:0px 40px;
+		}
+		.name {
+			font-size:32px;
+			font-weight:bold;
+		}
+		.red {color:red;}
+		.blue{color:#1f87e8;}
+
+		nav ul{
+			list-style-type:none;
+			margin:15px 0px 15px 330px;
+			float:right;
+			margin:40px 10px;
+		}
+		nav ul li{
+			float:left;
+			width:130px;
+			line-height:45px;
+			border-radius:10px;
+			text-align:center;
+		}
+		nav ul li:hover{
+			background:red;
+			color:white;
+		}
+		nav a:visited{
+			color:blue;
+		}
+		.active{
+			background:red;
+			color:white;
+		}
+		.active a:visited{
+			color:white;
+		}
+/******************************* section  **************************************/
+		#section1, #section2, #section3, #section4, #section5, footer{
+			float:left;
+			width:100%;
+		}
+		.box{
+			float:none;
+			width:1200px;
+			margin:0px auto;
+			text-align:center;
+		}
+
+		.sectionTitleSmall{
+			color:white;
+			font-size:20px;
+			padding-top:60px;
+		}
+		.sectionTitleBig{
+			color:white;
+			font-size:42px;
+			font-weight:bold;
+		}
+		#section1 {
+			background:url(/lezu/web/images/back1.jpg) no-repeat;
+			height:700px;
+		}
+
+
+/******************************* section 6 **************************************/
+		footer{
+			height:300px;
+			background:#191919;
+			color:#686868;
+			text-align:center;
+			line-height:50px;
+		}
+		footer p{
+			margin-top:10px;
+		}
+		footer a:link, footer a:hover, footer a:visited{
+			text-decoration:none;
+			color:#686868;
+		}
+		.tel{
+			font-size:48px;
+			color:#ffcc00;
+			font-family:georgia;
+		}

@@ -1,0 +1,276 @@
+﻿
+/*************************************  布局  *******************************************/
+html,body,div,table,tr,td,ul,li{
+	padding:0px;
+	margin:0px;
+}
+div,ul,li,table{
+	float:left;
+}
+.top{
+	background:#001A33;
+	width:100%;
+	height:120px;
+	color:white;
+}
+.right{
+	float:right;
+	margin:10px;
+}
+.right a:link,.right a:visited,.right a:hover{
+	text-decoration:none;
+	color:white;
+}
+#h1{
+	float:left;
+	font-family:微软雅黑 ;
+	font-size:45px;
+	line-height:48px;
+	margin-left:25px;
+}
+
+#content{
+	width:87%;
+	height:auto;
+}
+
+a:link{color: #000000; text-decoration:none;} /*常规时候的样式*/
+a:visited{color: #000000; text-decoration:none;} /*鼠标指上去的样式*/
+a:hover {color: #000000; text-decoration:underline;}
+
+
+
+/*************************************  面包屑  *************************************/
+
+.bread{
+	width:98%;
+	margin-left:5px;
+	margin-top:0px;
+	line-height:48px;
+	border-bottom:1px dashed black;
+}
+.bread ul{
+	margin-left:10px;
+}
+.bread ul li{
+	float:left;
+	margin-left:6px;
+}
+.bread ul li:after{
+	content:"  >";
+}
+.bread .active:after{
+	content:'';
+}
+.breadcrumb{
+	list-style-type:none;
+}
+.active{
+
+
+}
+/********************************** page ************************************************/
+
+.pagination{
+	width:100%;
+	clear:both;
+	list-style-type:none;
+}
+.pagination li{
+	float:left;
+	padding:3px 8px;
+	border:1px solid #cccccc;
+	margin-left:5px;
+}
+
+.pagination .active{
+	background:#ccf;
+}
+
+.disabled{
+	color:#ccc;
+}
+/********************************** list  ************************************************/
+.list-box{
+	margin:10px;
+}
+.list-table{
+	clear:both;
+	border-collapse:collapse;
+}
+
+.tab-ul{
+	list-style-type:none;
+	height:40px;
+}
+.tab-ul li{
+	padding:10px;
+}
+.list-active{
+	background:#3399FF;
+}
+.list-table,tr,td{
+	border:1px solid #3399FF;
+}
+
+.odd{background:#ffffee;}
+
+.even{background:#ddeeff;}
+
+.even0{background:#99ccff;}
+
+.list-table td{
+	padding:5px 13px;
+}
+
+/*************************************  菜单  *************************************/
+.leftform{
+	width:13%;
+	min-height:760px;
+	background:#fff;
+}
+.leftform ul li{
+	float:left;
+}
+.menu-image{
+	width:20px;
+	height:20px;
+	margin-top:15px;
+	margin-left:8px;
+}
+.menu-top{
+	width:100%;
+	height:48px;
+	font-size:21px;
+	line-height:48px;
+	list-style-type:none;
+	color:#fff;
+	text-align:center;
+	background:#336699;
+}
+.menu-title{
+	width:100%;
+	height:48px;
+	font-size:21px;
+	line-height:48px;
+	background:#3399FF;
+	color:white;
+	border-bottom: 2px solid #3399FF;
+}
+.menu{
+	width:81%;
+	height:36px;
+	font-size:18px;
+	line-height:28px;
+	margin-top:5px;
+	padding-left:45px;
+	font-weight:70;
+	border-bottom: 1px solid #3399FF;
+}
+.menu-last{
+	width:81%;
+	height:36px;
+	font-size:18px;
+	line-height:28px;
+	margin-top:5px;
+	padding-left:45px;
+	font-weight:70;
+}
+
+
+
+/*************************************  内容部分  *************************************/
+/*中间主要表格*/
+
+.content-box{
+	width:98%;
+	margin:10px;
+}
+
+
+
+/*************************************  表单部分  *************************************/
+label{
+
+}
+.control-label{
+	display:block;
+	float:left;
+	width:100px;
+	margin: 3px 10px;
+	font-size:16px;
+}
+.form-group{
+	float:left;
+	height:auto;
+	clear:both;
+	margin:5px;
+}
+textarea, #article-content{
+	width:800px;
+	height:auto;
+	float:left;
+}
+.form-control{
+	float:left;
+	border-radius:2px;
+	height:20px;
+	width:200px;
+	float:left;
+	border:1px solid #000;
+}
+.address{
+	border:1px solid black;
+	float:left;
+}
+
+.form-group button{
+	margin:5px;
+	padding:3px 10px;
+	font-size:16px;
+	float:left;
+}
+
+.help-block{
+	margin:8px;
+	clear:both;
+	float:left;
+}
+
+.separator{
+	border-top:1px dashed blue;
+	float:left;
+	width:700px;
+	clear:both;
+	margin:10px;
+}
+
+
+/*************************************  客户简单列表  *************************************/
+	.client-list{
+		border:1px dashed blue;
+		background:#ffffdd;
+		margin:10px 20px;
+		padding:10px;
+	}
+	.tip{
+		right:15px;
+		top:180px;
+		position:absolute;
+	}
+	.client-list span{
+		margin:10px;
+		line-height:36px;
+	}
+	a.blue:link, a.blue:visited, a.blue:hover, a.blue:active{
+		color:blue;
+	}
+/*************************************  底部  *************************************/
+.footer{
+	background:#001A33;
+	text-align: center;
+	line-height:20px;
+	height:50px;
+	width:100%;
+	color:white;
+}
