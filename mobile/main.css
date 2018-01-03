@@ -1,0 +1,22 @@
+body{
+	margin:0px;
+	width:480px;
+}
+header, nav, section, footer{
+	width:480px;
+	margin:0px auto;
+}
+ul{
+	float:left;
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	width:100%;
+}
+ul li{
+	float:left;
+	padding:8px auto;
+	width:118px;
+	text-align:center;
+	border:1px solid blue;
+}
