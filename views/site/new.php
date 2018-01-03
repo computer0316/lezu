@@ -13,7 +13,6 @@ $this->title = '最新房源 - 廊坊乐租房地产经纪有限公司';
 	#about{
 		float:left;
 		width:100%;
-		height:900px;
 	}
 	#aboutTitleSmall, #aboutTitleBig{
 		color:#888888;
@@ -26,6 +25,45 @@ $this->title = '最新房源 - 廊坊乐租房地产经纪有限公司';
 		float:left;
 		margin-top:60px;
 	}
+	.leftNew{
+		float:left;
+		width:250px;
+		height:300px;
+	}
+	.iframe{
+		float:left;
+		width:900px;
+		border:0px;
+	}
+	.button a{
+		color:white;
+		text-decoration:none;
+	}
+	.button, .button:visited {
+		margin-top:30px;
+		margin-left:50px;
+		background: #222 url(overlay.png) repeat-x;
+		display: inline-block;
+		color: #fff;
+		text-decoration: none;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+		-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+		text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+		border-bottom: 1px solid rgba(0,0,0,0.25);
+		position: relative;
+		cursor: pointer
+	}
+
+	.button:hover							{ background-color: #111; color: #fff; }
+	.button:active							{ top: 1px; }
+	.button, .button:visited,
+
+	.large.button, .large.button:visited 			{ font-size: 34px;
+													  padding: 8px 30px; }
+	.blue.button, .blue.button:visited		    { background-color: #2981e4; }
+	.blue.button:hover							{ background-color: #2575cf; }
 
 </style>
 <script>
@@ -44,6 +82,19 @@ $this->title = '最新房源 - 廊坊乐租房地产经纪有限公司';
 		setAnimation("img5Div");
 		setAnimation("img6Div");
 	})
+
+
+    function changeFrameHeight(){
+        var ifm= document.getElementById("iframepage");
+        ifm.height=document.documentElement.clientHeight;
+
+    }
+
+    window.onresize=function(){
+         changeFrameHeight();
+
+    }
+
 </script>
 
 <section id="back">
@@ -51,38 +102,12 @@ $this->title = '最新房源 - 廊坊乐租房地产经纪有限公司';
 </section>
 <section id="about">
 	<div class="box">
-		<div id="aboutTitleSmall" class="sectionTitleSmall"><span>LASTEST LISTINGS</span></div>
-		<div id="aboutTitleBig" class="sectionTitleBig"><span>最新房源</span></div>
-		<div id="img1Div" class="img1Div">
-			<img src="images/house1.jpg" class="newImg" />
-			<p>新世界花园</p>
-			<p>均价：16000</p>
+		<div class="leftNew">
+			<div class="large button blue"><a target="_blank" href="http://weidian.51vfang.com/Web/Publish/saleLeaseOne/type/2.html?comp_id=238366&broker_id=">房东加盟</a></div>
+			<div class="large button blue"><a target="_blank" href="http://weidian.51vfang.com/Web/Publish/rentOne.html?comp_id=238366&broker_id=">意向预约</a></div>
 		</div>
-		<div id="img2Div"  class="img1Div">
-			<img src="images/house2.jpg" class="newImg" />
-			<p>新世界花园</p>
-			<p>均价：16000</p>
+		<div class="rightNew">
+			<iframe id="iframepage" class="iframe" onload="changeFrameHeight()" scrolling=yes src=http://weidian.51vfang.com/web/lease/leaselist?comp_id=238366#!/list?comp_id=238366></iframe>
 		</div>
-		<div id="img3Div"  class="img1Div">
-			<img src="images/house3.jpg" class="newImg" />
-			<p>新世界花园</p>
-			<p>均价：16000</p>
-		</div>
-		<div id="img4Div"  class="img1Div">
-			<img src="images/house4.jpg" class="newImg" />
-			<p>新世界花园</p>
-			<p>均价：16000</p>
-		</div>
-		<div id="img5Div"  class="img1Div">
-			<img src="images/house5.jpg" class="newImg" />
-			<p>新世界花园</p>
-			<p>均价：16000</p>
-		</div>
-		<div id="img6Div"  class="img1Div">
-			<img src="images/house6.jpg" class="newImg" />
-			<p>新世界花园</p>
-			<p>均价：16000</p>
-		</div>
-
 	</div>
 </section>
