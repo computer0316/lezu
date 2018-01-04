@@ -18,9 +18,9 @@
         <header><a name="top" id="top">乐租廊坊</a></header>
         <nav>
         	<ul>
-        		<li><a href="">首页</a></li>
-        		<li><a href="">关于我们</a></li>
-        		<li><a href="">最新房源</a></li>
-        		<li><a href="">招聘启示</a></li>
+        		<li><a href="index.php">首页</a></li>
+        		<li><a href="about.php">关于我们</a></li>
+        		<li><a href="new.php">最新房源</a></li>
+        		<li><a href="recruit.php">招聘启示</a></li>
         	</ul>
         </nav>

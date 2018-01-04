@@ -106,8 +106,35 @@ section{
 	text-decoration:none;
 }
 footer{
+	float:left;
+	width:100%;
+	height:180px;
 	text-align:center;
 	color:#999;
 	font-size:18px;
 	line-height:48px;
+	border:1px solid red;
+}
+/************************************  footer ************************************/
+.fixed{
+	padding-top:20px;
+	width:100%;
+	height:100px;
+	z-index:10;
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	background:var(--darkRed);
+}
+.tel{
+	float:left;
+	width:25%;
+	font-size:16px;
+	color:white;
+	text-align:center;
+}
+.tel img{
+	width:50px;
+	height:50px;
+	clear:both;
 }
