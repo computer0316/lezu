@@ -1,22 +1,113 @@
+:root{
+	--darkRed:#bc0100;
+	--width:100%;
+}
 body{
 	margin:0px;
-	width:480px;
+	width:var(--width);
+}
+div, p{
+	margin:0px;
 }
 header, nav, section, footer{
-	width:480px;
+	width:var(--width);
 	margin:0px auto;
 }
-ul{
+/************************************  header ************************************/
+header{
+	height:60px;
+	line-height:60px;
+	color:var(--darkRed);
+	font-size:32px;
+	text-align:center;
+}
+nav ul{
 	float:left;
 	list-style-type:none;
 	margin:0px;
 	padding:0px;
 	width:100%;
+	border-top:1px solid var(--darkRed);
+	border-bottom:1px solid var(--darkRed);
 }
-ul li{
+nav ul li{
 	float:left;
-	padding:8px auto;
-	width:118px;
+	margin:2%;
 	text-align:center;
-	border:1px solid blue;
+}
+nav ul li a{
+	color:var(--darkRed);
+	text-decoration:none;
+	font-size:24px;
+}
+
+/************************************  section ************************************/
+section{
+	float:left;
+	text-align:center;
+}
+.mainBack{
+	float:left;
+	width:100%;
+}
+/************************************  section2 ************************************/
+#section2{
+	float:left;
+	position:relative;
+}
+#formalCompany{
+	position:absolute;
+	top:15px;
+	right:10px;
+	line-height:24px;
+	font-size:18px;
+	color:white;
+	text-align:left;
+}
+.title{
+	font-size:24px;
+	margin-bottom:20px;
+}
+/************************************  section3 ************************************/
+#section3{
+	position:relative;
+}
+.tab{
+	background:var(--darkRed);
+	width:35%;
+	height:60px;
+	line-height:60px;
+	margin-top:5px;
+	border-radius:0px 25px 0px 0px;
+	color:white;
+	font-size:28px;
+}
+#brief{
+	float:left;
+	width:100%;
+	border-top:1px solid var(--darkRed);
+	color:#999;
+	font-size:24px;
+}
+#brief p{
+	float:left;
+	text-align:left;
+}
+
+/************************************  footer ************************************/
+#goTop{
+	height:40px;
+	line-height:40px;
+	font-size:18px;
+	background:var(--darkRed);
+}
+#goTop a{
+	color:white;
+	text-decoration:none;
+}
+footer{
+	text-align:center;
+	color:#999;
+	font-size:18px;
+	line-height:48px;
 }

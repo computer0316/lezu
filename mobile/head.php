@@ -7,7 +7,7 @@
 	    <meta name=author content=Roc>
 	    <meta name=copyright content=Roc>
 	    <link rel=shortcut icon href=favicon.ico>
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"-->
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="format-detection" content="telephone=no">
@@ -15,7 +15,7 @@
 	    <script src=script.js></script>
 	    </head>
     <body>
-        <header>乐租廊坊</header>
+        <header><a name="top" id="top">乐租廊坊</a></header>
         <nav>
         	<ul>
         		<li><a href="">首页</a></li>
@@ -24,4 +24,3 @@
         		<li><a href="">招聘启示</a></li>
         	</ul>
         </nav>
-        <section>
