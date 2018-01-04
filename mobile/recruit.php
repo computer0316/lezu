@@ -7,6 +7,7 @@ include 'head.php';
 		color:black;
 		text-align:left;
 		padding:5px;
+		border-top:1px solid var(--darkRed);
 	}
 	#recruit p{
 		font-size:20px;

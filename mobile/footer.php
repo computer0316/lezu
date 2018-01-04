@@ -5,11 +5,11 @@
         <div class="fixed">
 			<div class="tel">
 				<a href="tel:0316-2274477"><img src="images/phone.png" /></a>
-				<p>电话咨询</p>
+				<p>值班电话</p>
 			</div>
 			<div class="tel">
 				<a href="tel:18033670505"><img src="images/mobile.png" /></a>
-				<p>值班手机</p>
+				<p>手机咨询</p>
 			</div>
 			<div class="tel">
 				<a href="mailto:lezufgj@163.com"><img src="images/email.png" /></a>
