@@ -16,7 +16,7 @@ $this->title = '乐租资讯 - 廊坊乐租房地产经纪有限公司';
 	#about{
 		float:left;
 		width:100%;
-		height:1300px;
+		height:auto;
 		background:white;
 	}
 	.newsImgDiv{
@@ -51,6 +51,10 @@ $this->title = '乐租资讯 - 廊坊乐租房地产经纪有限公司';
 		text-align:left;
 		margin:3px 10px;
 	}
+	.pTitle{
+
+		font-size:20px;
+	}
 
 </style>
 <script>
@@ -81,6 +85,7 @@ $this->title = '乐租资讯 - 廊坊乐租房地产经纪有限公司';
 	<div class="box">
 		<div id="aboutTitleSmall" class="sectionTitleSmall"><span>PROPERTY NEWS</span></div>
 		<div id="aboutTitleBig" class="sectionTitleBig"><span>楼市资讯</span></div>
+<!--
 		<div id="newsImgDiv1" class="newsImgDiv">
 			<img src="images/house7.jpg" />
 			<p>这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字</p>
@@ -89,13 +94,14 @@ $this->title = '乐租资讯 - 廊坊乐租房地产经纪有限公司';
 			<img src="images/house8.jpg" />
 			<p>这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字</p>
 		</div>
+-->
 <?php
 	$i = 1;
 	foreach($articles as $article){
 		echo '<div id="article' . $i++ . '" class="list">' . "\n";
 		echo '<div class="dateDiv"><p class="p1">29</p><p>2017/10</p></div>' . "\n";
-		echo '<a href="' . Url::toRoute(['show', 'id' => $article->id]) . '"><p class="pContent">' . $article->title . '</p></a><br />' . "\n";
-		echo '<p class="pTitle">' . mb_substr(strip_tags($article->content),0,180, "utf-8") . '</p>' . "\n";
+		echo '<a href="' . Url::toRoute(['show', 'id' => $article->id]) . '"><p class="pTitle">' . $article->title . '</p></a><br />' . "\n";
+		echo '<p class="pContent">' . mb_substr(strip_tags($article->content),0,180, "utf-8") . '</p>' . "\n";
 		echo "</div>\n";
 	}
 ?>
