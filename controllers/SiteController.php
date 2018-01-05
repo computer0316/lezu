@@ -92,7 +92,7 @@ class SiteController extends Controller
 
     public function actionNews(){
     	$this->newsLi = 'active';
-    	$articleList = Article::find()->orderBy('id desc')->all();
+    	$articleList = Article::find()->orderBy('id desc')->limit(6)->all();
     	return $this->render('news', ['articles' => $articleList]);
     }
 
