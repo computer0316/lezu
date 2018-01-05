@@ -54,7 +54,9 @@ use yii\helpers\VarDumper;
 		<p id="footer2">手机号码：18033670505</p>
 		<p id="footer3">邮箱：<a href="mailto:lezufgj@163.com">lezufgj@163.com</a></p>
 		<p id="footer4" class="tel">0316-2274477</p>
-		<p id="footer5">@2017 廊坊乐租房地产经纪有限公司</p>
+		<p id="footer5">
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1271967937'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1271967937%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+			2017-2018 廊坊乐租房地产经纪有限公司</p>
 	</footer>
 
 

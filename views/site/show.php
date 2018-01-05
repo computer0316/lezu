@@ -3,21 +3,64 @@
 	use yii\widgets\ActiveForm;
 	use yii\helpers\Url;
 	use yii\widgets\LinkPager;
+	use app\models\Article;
 
 	// 客户信息窗体
 
+	$article = Article::findOne($id);
+	echo '<div class="line"></div>' . "\n";
+	if($article){
+		echo '<section class="article">' . "\n";
+			echo '<div class="title">' . $article->title . '</div>' . "\n";
+			echo '<div class="content">' . $article->content . '</div><br />' . "\n";
+			showPreviousNext($id);
+		echo "</section>\n";
+	}
+	else{
+		echo '文章没找到';
+	}
+
+	function showPreviousNext($id){
+		$previous = Article::find()->where(['<', 'id', $id])->orderBy('id desc')->one();
+		echo '上一篇：';
+		if($previous){
+			echo  '<a  href="?r=site/show&id=' . $previous->id . '">' . $previous->title . '</a><br />';
+		}
+		else{
+			echo '没有了<br />';
+		}
+		echo '下一篇：';
+		$next = Article::find()->where(['>', 'id', $id])->orderBy('id')->one();
+		if($next){
+			echo  '<a  href="?r=site/show&id=' . $next->id . '">' . $next->title . '</a><br />';
+		}
+		else{
+			echo '没有了<br />';
+		}
+	}
 ?>
-	<link rel="stylesheet" type="text/css" href="css/userlogin.css" />
-
-
-    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
-    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
-	<div class="form1">
-	<?= $article->title ?>
-	<br />
-	<?= $article->content ?>
-	</div>
-
+<style>
+	.line{
+		float:left;
+		width:100%;
+		border-bottom:1px solid red;
+	}
+	.article{
+		width:1200px;
+		margin:0px auto;
+		clear:both;
+	}
+	.title{
+		float:left;
+		width:100%;
+		text-align:center;
+		font-size:24px;
+		padding:36px;
+	}
+	.content{
+		line-height:32px;
+	}
+</style>
 
 
 

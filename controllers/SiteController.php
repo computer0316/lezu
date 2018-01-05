@@ -96,6 +96,10 @@ class SiteController extends Controller
     	return $this->render('news', ['articles' => $articleList]);
     }
 
+    public function actionShow($id){
+    	return $this->render('show', ['id' => $id]);
+    }
+
     public function actionRecruit(){
     	$this->recruitLi = 'active';
     	return $this->render('recruit');
@@ -105,6 +109,8 @@ class SiteController extends Controller
     	$this->contactLi = 'active';
     	return $this->render('contact');
     }
+
+
 
     /**
      * Login action.
