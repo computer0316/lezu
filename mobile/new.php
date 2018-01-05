@@ -1,4 +1,9 @@
 <?php
+$index	= "";
+$about	= "";
+$new	= "current";
+$recruit= "";
+
 include 'head.php';
 ?>
 <script>

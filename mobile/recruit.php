@@ -1,4 +1,8 @@
 <?php
+$index	= "";
+$about	= "";
+$new	= "";
+$recruit= "current";
 include 'head.php';
 ?>
 <style>
