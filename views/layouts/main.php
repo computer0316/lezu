@@ -43,6 +43,7 @@ use yii\helpers\VarDumper;
 				<a href="<?=Url::toRoute('about')?>"><li id="aboutLi" class="<?= $this->context->aboutLi ?>">关于我们</li></a>
 				<a href="<?=Url::toRoute('new')?>"><li id="newLi" class="<?= $this->context->newLi ?>">最新房源</li></a>
 				<a href="<?=Url::toRoute('news')?>"><li id="newsLi" class="<?= $this->context->newsLi ?>">楼市资讯</li></a>
+				<a href="<?=Url::toRoute('recruit')?>"><li id="recruitLi" class="<?= $this->context->recruitLi ?>">招聘信息</li></a>
 				<a href="<?=Url::toRoute('contact')?>"><li id="contactLi" class="<?= $this->context->contactLi ?>">联系我们</li></a>
 			</ul>
 		</nav>

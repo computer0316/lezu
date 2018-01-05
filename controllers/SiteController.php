@@ -61,6 +61,7 @@ class SiteController extends Controller
 	public $aboutLi;
 	public $newLi;
 	public $newsLi;
+	public $recruitLi;
 	public $contactLi;
 
     /**
@@ -71,7 +72,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
 		if(Tools::isMobile() == true){
-			return $this->redirect("http://www.lflezu.cn/m");
+			return $this->redirect("http://www.lflezu.cn/mobile");
 		}
 		else{
 			$this->indexLi = 'active';
@@ -93,6 +94,11 @@ class SiteController extends Controller
     	$this->newsLi = 'active';
     	$articleList = Article::find()->all();
     	return $this->render('news', ['articles' => $articleList]);
+    }
+
+    public function actionRecruit(){
+    	$this->recruitLi = 'active';
+    	return $this->render('recruit');
     }
 
     public function actionContact(){
