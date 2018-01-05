@@ -61,8 +61,6 @@ $this->title = '乐租资讯 - 廊坊乐租房地产经纪有限公司';
 	window.addEventListener('scroll',function(){
 		setAnimation("aboutTitleSmall");
 		setAnimation("aboutTitleBig");
-		setAnimation("newsImgDiv1");
-		setAnimation("newsImgDiv2");
 		setAnimation("footer1");
 		setAnimation("footer2");
 		setAnimation("footer3");
