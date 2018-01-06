@@ -1,0 +1,21 @@
+.box{
+	float:left;
+	width:100%;
+	margin:0px;
+	border-bottom:1px solid #ddd;
+}
+.img{
+	float:left;
+	width:150px;
+	height:150px;
+}
+.procedure{
+	width:100%;
+}
+.title{
+	font-weight:bold;
+}
+iframe{
+	border:0px;
+	width:100%;
+}
