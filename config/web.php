@@ -8,6 +8,7 @@ $config = [
     'language'=>'zh_CN',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'vendorPath'=> __DIR__ . '/../../vendor',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
